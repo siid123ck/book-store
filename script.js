@@ -15,11 +15,18 @@ document.getElementById('electronics-category').addEventListener('click', functi
         .catch(error => console.log('Error:', error));
 });
 
+document.getElementById('perfume-category').addEventListener('click', function() {
+    fetch('perfumes.xml')
+        .then(response => response.text())
+        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+        .then(data => displayProducts(data, 'perfumes'))
+        .catch(error => console.log('Error:', error));
+});
+
 function displayProducts(data, category) {
     const productInfo = document.getElementById('product-info');
     productInfo.innerHTML = ''; 
     let content;
-    console.log(data.books)
     if (category === 'books') {
         content = data.map(book => `
         <div class="card">
@@ -62,7 +69,32 @@ function displayProducts(data, category) {
             </div>
             `;
         }).join('');
-    }
+    } 
+    else if (category === 'perfumes') {
+      const products = data.getElementsByTagName('perfume');
+      console.log(products)
+      content = Array.from(products).map(prod => {
+          const name = prod.getElementsByTagName('name')[0].textContent;
+          const price = prod.getElementsByTagName('price')[0].textContent;
+          const brand = prod.getElementsByTagName('brand')[0].textContent;
+          const ingredients = prod.getElementsByTagName('ingredients')[0].textContent;
+          const itemWeight = prod.getElementsByTagName('item_weight')[0].textContent;
+          
+          return `
+              <div class="card">
+                  <img class="card-img-top" src="placeholder-perfume.jpg" alt="${name}">
+                  <div class="card-body">
+                      <h5 class="card-title">${name}</h5>
+                      <p class="card-brand">Brand: ${brand}</p>
+                      <p class="card-price">Price: $${price}</p>
+                      <p class="card-ingredients">Ingredients: ${ingredients}</p>
+                      <p class="card-weight">Weight: ${itemWeight}</p>
+                      <button class="btn-add-cart">Add to Cart</button>
+                  </div>
+              </div>
+          `;
+      }).join('');
+  }
 
     productInfo.innerHTML = content;
 }
@@ -70,6 +102,7 @@ function displayProducts(data, category) {
 let currentIndex = 0;
 
 document.querySelector('.carousel-control-next').addEventListener('click', () => {
+  console.log('next')
   const items = document.querySelectorAll('.carousel-item');
   if (currentIndex < items.length - 1) {
     currentIndex++;

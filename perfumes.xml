@@ -1,0 +1,45 @@
+<perfumes>
+    <perfume id="p1">
+        <name>Calvin Klein Beauty Eau de Parfum for Women, 100ml</name>
+        <price>39.99</price>
+        <brand>Calvin Klein</brand>
+        <ingredients>Alcohol Denat, Water, Parfum</ingredients>
+        <item_weight>1 Pounds</item_weight>
+    </perfume>
+
+    <perfume id="p2">
+        <name>Burberry London Fabric Eau De Parfum, 100ml</name>
+        <price>49.99</price>
+        <brand>BURBERRY</brand>
+        <ingredients>Alcohol Denat, Water, Parfum</ingredients>
+        <item_weight>100 Grams</item_weight>
+    </perfume>
+
+    <perfume id="p13">
+        <name>Jimmy Choo Eau de Toilette, 100ml</name>
+        <price>71.94</price>
+        <brand>JIMMY CHOO</brand>
+        <ingredients>Water, alcohol denatured, limonene, and linalool.</ingredients>
+        <item_weight>0.37 Kilograms</item_weight>
+    </perfume>
+
+    <perfume id="p25">
+        <name>Lancome La Vie Est Belle L'Eau de Parfum Spray 100ml</name>
+        <price>139.99</price>
+        <brand>Lancome</brand>
+        <ingredients>
+            ALCOHOL - PARFUM / FRAGRANCE - AQUA / WATER - LINALOOL - BENZYL SALICYLATE - LIMONENE - METHYL ANTHRANILATE - TRIS (TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE - ETHYLHEXYL METHOXYCINNAMATE - BUTYL METHOXYDIBENZOYLMETHANE - CI 147 / RED 4 - CI 172 / RED 33 - CI 475 / YELLOW 1 - GERANIOL - ALPHA-ISOMETHYL IONONE - COUMARIN - FARNESOL - CITRAL - CITRONELLOL - BENZYL ALCOHOL - BENZYL BENZOATE
+        </ingredients>
+        <item_weight>1 Pounds</item_weight>
+    </perfume>
+
+    <perfume id="p28">
+        <name>Roja Parfums Goodnight Kiss Parfum 3.4oz/100ml New In Box</name>
+        <price>2,500.00</price>
+        <brand>Lancome</brand>
+        <ingredients>
+            ALCOHOL -  /  - AQUA / WATER - LINALOOL - BENZYL SALICYLATE - LIMONENE - METHYL ANTHRANILATE - TRIS (TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE - ETHYLHEXYL METHOXYCINNAMATE - BUTYL METHOXYDIBENZOYLMETHANE - CI 147 / RED 4 - CI 172 / RED 33 - CI 475 / YELLOW 1 - GERANIOL - ALPHA-ISOMETHYL IONONE - COUMARIN - FARNESOL - CITRAL - CITRONELLOL - BENZYL ALCOHOL - BENZYL BENZOATE
+        </ingredients>
+        <item_weight>2 Pounds</item_weight>
+    </perfume>
+</perfumes>
